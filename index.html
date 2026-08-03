@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NombreBot — Moderación y Utilities para Discord</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Bot de Discord verificado — moderación, niveles, tickets y estadísticas." />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo-wrap">
+          <!-- src inicial pequeño; script.js reemplaza con la ruta que exista -->
+          <img id="site-logo" src="assets/LogoWeb.png" srcset="assets/LogoWeb@2x.png 2x" alt="Logo NombreBot" class="logo"/>
+        </div>
+        <span class="brand-text">NEFARION</span>
+      </div>
+      <nav class="menu">
+        <a href="#funciones">Funciones</a>
+        <a href="#comandos">Comandos</a>
+        <a href="#estadisticas">Estadísticas</a>
+        <a href="#docs">Docs</a>
+        <a class="btn-ghost" id="server-btn" href="https://discord.gg/2ZGwHW4KdY" target="_blank" rel="noopener noreferrer">Servidor</a>
+        <a class="btn-primary" href="https://discord.com/oauth2/authorize?client_id=1432861256590692422&permissions=8&integration_type=0&scope=bot">Añadir a Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero-section" >
+      <!-- Canvas para partículas -->
+      <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <h1>NEFARION</h1>
+        <p class="subtitle"><strong>El poder de moderar.</strong> La libertad de crear.</p>
+        <p class="lead">Bot verificado de Discord, avanzado y multifuncional para proteger, gestionar y potenciar tu comunidad.</p>
+        <div class="cta-row">
+          <a class="btn-primary large" href="https://discord.com/oauth2/authorize?client_id=1432861256590692422&permissions=8&integration_type=0&scope=bot">Añadir a Discord</a>
+          <a class="btn-ghost large" href="#comandos">Ver comandos →</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-num">9+</div><div class="stat-label">Servidores</div></div>
+          <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Usuarios</div></div>
+          <div class="stat"><div class="stat-num">99.9%</div><div class="stat-label">Tiempo en línea</div></div>
+          <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Soporte activo</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funciones" class="container features">
+      <h2>Todo lo que tu servidor necesita</h2>
+      <p class="muted">Potentes herramientas para una moderación completa y profesional.</p>
+
+      <div class="cards">
+        <article class="card"><div class="card-icon">🛡️</div><h3>Moderación Avanzada</h3><p>Protege tu servidor con sistema de moderación configurable y logs completos.</p><a class="more" href="#docs">Más información →</a></article>
+        <article class="card"><div class="card-icon">📊</div><h3>Sistema de Niveles</h3><p>Recompensa la actividad con roles y niveles automáticos.</p><a class="more" href="#docs">Más información →</a></article>
+        <article class="card"><div class="card-icon">🎟️</div><h3>Sistema de Tickets</h3><p>Gestiona solicitudes y soporte privado dentro del servidor.</p><a class="more" href="#docs">Más información →</a></article>
+        <article class="card"><div class="card-icon">🔒</div><h3>Seguridad Total</h3><p>Protecciones anti-raid, anti-spam y filtros avanzados.</p><a class="more" href="#docs">Más información →</a></article>
+      </div>
+    </section>
+
+    <section id="comandos" class="container docs-preview">
+      <h2>Comandos principales</h2>
+      <div class="cmd-grid">
+        <div class="cmd"><strong>/ban</strong><span> - Banea a un usuario</span></div>
+        <div class="cmd"><strong>/unban</strong><span> - Silencia temporalmente a un miembro</span></div>
+        <div class="cmd"><strong>/kick</strong><span> - Expulsa a un usuario</span></div>
+        <div class="cmd"><strong>/ticket</strong><span> - Abre un ticket de soporte</span></div>
+        <div class="cmd"><strong>/clear</strong><span> - Elimina mensajes del canal</span></div>
+        <div class="cmd"><strong>/embed</strong><span> - Crea y envia un mensaje embed personalizado</span></div>
+        <div class="cmd"><strong>/timeout</strong><span> - Silencia temporalmente a un miembro</span></div>
+        <div class="cmd"><strong>/untimeout</strong><span> - Quita el silencio a un miembro</span></div>
+        <div class="cmd"><strong>/warn</strong><span> - Advierte a un usuario </span></div>
+        <div class="cmd"><strong>/warnings</strong><span> - Muestra las advertencias de un usuario</span></div>
+        <div class="cmd"><strong>/Anuncio</strong><span> - Envia un anuncio embed a un canal especifico</span></div>
+      </div>
+      <p class="muted">Consulta la documentación completa en <a href="#docs">Docs</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> NEFARION • Hecho Por Nefarion Systems • Hecho con ♥</div>
+      <div class="footer-links">
+        <a href="#docs">Docs</a>
+        <a href="#support">Soporte</a>
+        <a href="#" id="privacy">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
