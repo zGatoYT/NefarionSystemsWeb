@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nefarion-systems-web.vercel.app/sitemap.xml
