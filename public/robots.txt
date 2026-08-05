@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+<<<<<<< HEAD
 Sitemap: https://nefarion-systems-web.vercel.app/sitemap.xml
+>>>>>>> 5306934 (Add sitemap and robots.txt (fix sitemap))
